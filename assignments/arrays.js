@@ -65,15 +65,7 @@ let inventory = [
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 
-console.log(
-  "Car 33 is a " +
-    inventory[32].car_year +
-    " " +
-    inventory[32].car_make +
-    " " +
-    inventory[32].car_model +
-    "."
-);
+console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model}.`);
 
 console.log("*************************************************************************");
 console.log("*************************************************************************");
@@ -82,13 +74,7 @@ console.log("*******************************************************************
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 let lastCar = inventory.length - 1;
 
-console.log(
-  "The last car is a " +
-    inventory[lastCar].car_make +
-    " " +
-    inventory[lastCar].car_model +
-    "."
-);
+console.log(`The last car is a ${inventory[lastCar].car_make} ${inventory[lastCar].car_model}.`);
 
 console.log("*************************************************************************");
 console.log("*************************************************************************");
@@ -146,7 +132,7 @@ console.log("*******************************************************************
 console.log("*************************************************************************");
 
 let oldCars = carYears.filter(x => x < 2000);
-console.log(oldCars.length + " old cars on the lot, boss!");
+console.log(`${oldCars.length} old cars on the lot, boss!`);
 console.log("*************************************************************************");
 console.log("*************************************************************************");
 
